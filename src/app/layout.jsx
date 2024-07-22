@@ -1,6 +1,7 @@
 import {Harmattan } from "next/font/google";
 import "./globals.css";
 
+
 const harmattan = Harmattan({
   weight: '400',
   subsets: ['latin'],
@@ -14,7 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={harmattan.className}>{children}</body>
+      <body className={harmattan.className}>
+
+     {children}</body>
     </html>
   );
 }

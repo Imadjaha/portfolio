@@ -66,6 +66,7 @@ body {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+
 }
 
 .card.show {
@@ -76,6 +77,7 @@ body {
 
 .card button:hover {
   opacity: 0.5;
+  
 }
 
 .selectedProjects {
@@ -88,7 +90,7 @@ body {
   opacity: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 10px;
+  border-radius: 45%;
 }
 
 .projects {
@@ -101,10 +103,42 @@ body {
   opacity: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
   border: 1px solid black;
-  border-radius: 10px;
+  border-radius: 45%;
+  
 }
-
-.projects:hover, .selectedProjects:hover {
+.card:hover > :first-child {
+  /* background-color: teal; */
+  -webkit-transform: scale(1.6);
   transform: scale(1.05);
 }
 
+.projects:hover, .dark-mode .projects:hover, .selectedProjects:hover {
+  transform: scale(1.05);
+  border-radius: 45%;
+}
+
+/* Dark Mode  */
+body.dark-mode {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+
+.dark-mode .projects {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+.dark-mode .card {
+  background-color: #4c4f51;
+  color: white;
+  box-shadow: 0 4px 2px 0 rgba(21, 20, 20, 0.2);
+}
+.dark-mode .social-icon {
+  filter: invert(1);
+}
+
+.dark-mode a{
+  color: teal;
+}

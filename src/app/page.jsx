@@ -6,13 +6,14 @@ import Qualifications from "./components/Qualifications/Qualifications";
 import SocialProfiles from "./components/SocialProfiles/SocialProfiles";
 import Title from "./components/Title/Title";
 import Profile from "./components/Profile/Profile";
-const punycode = require('punycode/');
-
+import LightDarkMode from "../app/components/DarkMode/LightDarkMode";
+import { DarkModeProvider } from "../app/components/DarkMode/DarkModeContext";
 
 export default function Home() {
   return (
+    <DarkModeProvider>
     <main >
-    
+    <LightDarkMode />
       {" "}
       <div className="row">
       <Title />
@@ -30,5 +31,6 @@ export default function Home() {
       <hr />
       <SocialProfiles />
     </main>
+    </DarkModeProvider>
   );
 }

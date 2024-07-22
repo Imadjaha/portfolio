@@ -21,7 +21,7 @@ function SocialProfile({link, image}) {
   return (
   
       <a href={link} target="_blank" rel="noreferrer">
-        <Image src={image} alt="social profile" style={{width:30,height:30, margin:10 }} />
+        <Image className="social-icon" src={image} alt="social profile" style={{width:30,height:30, margin:10 }} />
       </a>
    
   )
