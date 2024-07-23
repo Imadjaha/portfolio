@@ -10,7 +10,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Ihre bestehenden Konfigurationen
-  output: 'export',
+
 };
 
 export default nextConfig;
