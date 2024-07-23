@@ -12,25 +12,24 @@ import { DarkModeProvider } from "../app/components/DarkMode/DarkModeContext";
 export default function Home() {
   return (
     <DarkModeProvider>
-    <main >
-    <LightDarkMode />
-      {" "}
-      <div className="row">
-      <Title />
-      <div className="column">
-        <Profile />
-      </div>
-      <div className="column">
-        <Qualifications />
+      <main>
+        <LightDarkMode />{" "}
+        <div className="row">
+          <Title />
+          <div className="column">
+            <Profile />
+          </div>
+          <div className="column">
+            <Qualifications />
+            <br />
+          </div>
+          <hr />
+        </div>
+        <Projects />
         <br />
-      </div>
-      <hr />
-      </div>
-      <Projects />
-      <br />
-      <hr />
-      <SocialProfiles />
-    </main>
+        <hr />
+        <SocialProfiles />
+      </main>
     </DarkModeProvider>
   );
 }
