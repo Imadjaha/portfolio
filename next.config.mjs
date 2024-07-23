@@ -7,8 +7,10 @@
 //   trailingSlash: true,
 // };
 
-// export default nextConfig;
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  };
-  export default nextConfig;
+  // Ihre bestehenden Konfigurationen
+  output: 'export',
+};
+
+export default nextConfig;
