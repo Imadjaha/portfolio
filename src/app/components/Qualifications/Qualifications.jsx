@@ -6,9 +6,9 @@ function Qualifications() {
       <h1>Qualifications</h1>
       <li>
         <h3>Bachelor of Science in Computer Science (Current)</h3>
-        <p>
+        <span>
           <i>October 2022 - Present</i>{" "}
-        </p>
+        </span>
         
         <a href="http://www.uni-wuppertal.de" target="_blank" rel="noreferrer">
           <span>University of Wuppertal Germany</span>
@@ -21,12 +21,12 @@ function Qualifications() {
         <h3> Bachelor's Degree in Chemistry </h3>
         <i>September 2017 – June 2020</i>
 
-        <p>
+        <div>
           <p>Univerisity Mohammed Premmier Oujda Morocco</p>
          
           Thesis Topic: Comparative Study of Perovskites: BaTiO3, Ba1-XSrXTiO3,
           BaTi1-XZrXO3 Graduation Grade: 2.2
-        </p>
+        </div>
       </li>
       <hr />
       <li>
