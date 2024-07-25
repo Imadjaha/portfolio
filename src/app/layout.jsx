@@ -1,5 +1,6 @@
 import {Harmattan } from "next/font/google";
 import "./globals.css";
+import SideNavbar from "./components/SideNavbar";
 
 
 const harmattan = Harmattan({
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={harmattan.className}>
-
+      <SideNavbar />
      {children}</body>
     </html>
   );

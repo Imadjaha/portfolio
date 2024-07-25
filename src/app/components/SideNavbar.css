@@ -1,0 +1,108 @@
+/* styles.css */
+.aside {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 50px; /* Initial width for the collapsed state */
+    height: 6vh;
+    background-color: #67e1ff;
+    color: #fff;
+    transition: width 0.3s;
+    overflow: hidden;
+    z-index: 1000;
+    
+  }
+  
+  .aside:hover {
+    width: 200px; /* Width when expanded */
+    height: 100vh;
+  }
+  
+  .aside .nav-toggler {
+    display: grid;
+    place-items: center;
+   
+    height: 44px;
+    cursor: pointer;
+    background-color: #67e1ff;
+    transition: background-color 0.3s;
+  }
+  .aside:hover .nav-toggler {
+    visibility:hidden
+  }
+  
+  .aside .nav-toggler span {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 5px 0;
+    color:black;
+  }
+  
+  .aside-inner {
+    padding: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s;
+  }
+  
+  .aside:hover .aside-inner {
+    opacity: 1; /* Show content when open */
+  }
+  
+  .aside .logo {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .aside .nav {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .aside .nav li {
+    margin: 15px 0;
+  }
+  
+  .aside .nav li a {
+    color:black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .aside .nav li a i {
+    margin-right: 10px;
+  }
+  
+  .aside .nav li a:hover {
+  background-color: black;
+  color: teal;
+  border-radius: 5px;
+
+  }
+
+  
+  .nav li {
+    position: relative; /* Notwendig für das Pseudoelement ::after */
+    padding:  0;
+    margin: 0;
+  }
+  
+  .nav li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px; /* Höhe der Linie */
+    background-color: black; /* Farbe der Linie */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  
+  .nav li:last-child::after {
+    content: none; /* Entfernt die Linie nach dem letzten <li> */
+  }
