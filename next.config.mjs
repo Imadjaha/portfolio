@@ -9,7 +9,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ihre bestehenden Konfigurationen
+  output: 'export',
 
 };
 
