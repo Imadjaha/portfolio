@@ -27,7 +27,7 @@ body {
 }
 
 .btn1 {
-  background-color: teal;
+  background-color: #67e1ff;
   color: white;
   padding: 12px 30px;
   text-align: center;
@@ -50,7 +50,7 @@ body {
   display: inline-block;
   padding: 8px;
   color: white;
-  background-color: teal;
+  background-color: #67e1ff;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -81,7 +81,7 @@ body {
 }
 
 .selectedProjects {
-  background-color: teal;
+  background-color: #67e1ff;
   color: white;
   padding: 7px 10px;
   text-align: center;
