@@ -8,7 +8,7 @@ import Title from "./components/Title/Title";
 import Profile from "./components/Profile/Profile";
 import LightDarkMode from "../app/components/DarkMode/LightDarkMode";
 import { DarkModeProvider } from "../app/components/DarkMode/DarkModeContext";
-
+import Footer from "./components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -31,6 +31,7 @@ export default function Home() {
         <br />
         <hr />
         <SocialProfiles />
+        <Footer/>
       </main>
     </DarkModeProvider>
   );

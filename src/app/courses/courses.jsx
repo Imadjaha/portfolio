@@ -12,7 +12,7 @@ const courses = [
     title: "Basics of Technical Computer Science",
     semester: "WS22",
     description:
-      "Qualifications: Mastery of fundamental concepts in technical computer science, understanding the construction and operation of simple logic gates to complete computers, and the principles of low-level programming. Ability to mathematically model information technology contexts. Topics Covered: Information Representation and Coding, Logic Algebra (Binary Boolean Algebra), Logic Circuits and Sequential Circuits, Computer Architecture, Microprocessors, Assembly Programming Techniques, Operating Systems. ",
+      "Qualifications: Mastery of fundamental concepts in technical computer science, understanding the construction and operation of simple logic gates to complete computers, and the principles of low-level programming. Ability to mathematically model information technology contexts. Topics Covered: Information Representation and Coding, Logic Algebra (Binary Boolean Algebra), Logic Circuits and Sequential Circuits, Computer Architecture, Microprocessors, Assembly Programming Techniques, Operating Systems.",
   },
   {
     id: 3,

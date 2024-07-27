@@ -90,7 +90,7 @@ body {
   opacity: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
   border: none;
-  border-radius: 45%;
+  border-radius:20px;
 }
 
 .projects {
@@ -103,24 +103,27 @@ body {
   opacity: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
   border: 1px solid black;
-  border-radius: 45%;
+  border-radius:20px;
   
 }
 .card:hover > :first-child {
   /* background-color: teal; */
   -webkit-transform: scale(1.6);
   transform: scale(1.05);
+  
 }
 
 .projects:hover, .dark-mode .projects:hover, .selectedProjects:hover {
   transform: scale(1.05);
-  border-radius: 45%;
+  border-radius:20px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(0, 143, 175);
 }
 
 /* Dark Mode  */
 body.dark-mode {
-  background-color: #222222;
-  color: #ffffff;
+  background-color: #272727;
+  color: #fcf9f9;
 }
 
 

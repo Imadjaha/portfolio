@@ -6,7 +6,7 @@
  
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .cardContainer1 {
     grid-template-columns: 1fr;
     padding: 0px;
@@ -129,7 +129,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-
+ content: '';
 
   border: none;
   border-radius: 50%;

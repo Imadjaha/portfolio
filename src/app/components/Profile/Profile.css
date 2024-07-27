@@ -4,13 +4,24 @@
     /* transition: max-height 2.5s ease-out; */
     opacity: 0;
     transition: max-height 2.5s ease-out, opacity 2.5s ease-out;
+    text-align: justify;
+      
+  line-height: 1.5;
+  word-wrap: break-word; 
+  hyphens: auto;
+
+
   }
-  
+
+
   .text-container.show {
     max-height: 500px; /* Adjust to the maximum height you want */
-    /* transition: max-height 4.5s ease-in; */
+
     opacity: 1;
     transition: max-height 4.5s ease-in, opacity 1.5s ease-in;
+    text-align: justify;
+    text-transform: capitalize;
+ 
   }
 
 .profile{
