@@ -1,0 +1,125 @@
+.cardContainer1 {
+  display: grid;
+  row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media screen and (max-width: 800px) {
+  .cardContainer1 {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+}
+@media (max-width: 600px) {
+  .cardContainer1 {
+    padding: 10px;
+  }
+}
+
+.card1 {
+  background: #67e1ff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 1fr;
+  height: 150px;
+  padding: 10px;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card1.expanded {
+  height: auto;
+}
+.card1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 800px) {
+  .card1 {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .card1 {
+    width: 100%;
+  }
+}
+
+.cardTitle {
+  color: black;
+  font-size: 1.1em;
+  font-display: swap;
+  font-weight: bold;
+}
+
+.cardShortcut {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #1b233d;
+  border-radius: 10px;
+  padding: 0 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.cardShortcut:hover {
+  background-color: #044a94;
+  transform: translateY(-2px);
+}
+@media screen and (max-width: 800px) {
+  .cardShortcut {
+    top: 0;
+    right: 10px;
+  }
+}
+
+.cardDescription {
+  color: black;
+  font-size: 1em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.searchInput {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #433232;
+  border-radius: 4px;
+}
+.searchInput:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+.readMore {
+  color: blue;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.scrollToTopButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  content: "";
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}/*# sourceMappingURL=main.css.map */
