@@ -2,7 +2,10 @@ body {
   text-align: center;
   font-size: 20px;
   padding: 2%;
-
+}
+body.dark-mode {
+  background-color: #272727;
+  color: #fcf9f9;
 }
 
 * {
@@ -14,8 +17,8 @@ body {
   float: left;
   width: 50%;
 }
-@media (max-width: 800px){
-  .column{
+@media (max-width: 800px) {
+  .column {
     width: 100%;
   }
 }
@@ -39,11 +42,25 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-
 .btn1:hover {
   opacity: 0.5;
 }
 
+.card {
+  text-align: center;
+  display: inline-block;
+  justify-content: space-around;
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 .card button {
   border: none;
   outline: 0;
@@ -56,92 +73,55 @@ body {
   width: 100%;
   transition: 0.3s;
 }
-.card {
-  text-align: center;
-  display: inline-block;
-  justify-content: space-around;
-  margin: 10px;
-  max-width: 300px;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-
-}
-
-.card.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
 .card button:hover {
   opacity: 0.5;
-  
+}
+.card:hover > :first-child {
+  /* background-color: teal; */
+  transform: scale(1.05);
 }
 
-.selectedProjects {
-  background-color: #67e1ff;
-  color: white;
+.selectedProjects, .projects {
   padding: 7px 10px;
   text-align: center;
   font-size: 18px;
   margin: 4px 4px;
   opacity: 1;
   transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+  border-radius: 20px;
+}
+.selectedProjects:hover, .projects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(0, 143, 175);
+}
+
+.selectedProjects {
+  background-color: #67e1ff;
+  color: white;
   border: none;
-  border-radius:20px;
 }
 
 .projects {
   background-color: white;
   color: black;
   padding: 6px 10px;
-  text-align: center;
-  font-size: 18px;
-  margin: 4px 4px;
-  opacity: 1;
-  transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
   border: 1px solid black;
-  border-radius:20px;
-  
-}
-.card:hover > :first-child {
-  /* background-color: teal; */
-  -webkit-transform: scale(1.6);
-  transform: scale(1.05);
-  
 }
 
-.projects:hover, .dark-mode .projects:hover, .selectedProjects:hover {
-  transform: scale(1.05);
-  border-radius:20px;
-  box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
-  background-color: rgb(0, 143, 175);
-}
-
-/* Dark Mode  */
-body.dark-mode {
-  background-color: #272727;
-  color: #fcf9f9;
-}
-
-
-.dark-mode .projects {
+body.dark-mode .projects {
   background-color: #1e1e1e;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-
-.dark-mode .card {
+body.dark-mode .card {
   background-color: #4c4f51;
   color: white;
   box-shadow: 0 4px 2px 0 rgba(21, 20, 20, 0.2);
 }
-.dark-mode .social-icon {
+body.dark-mode .social-icon {
   filter: invert(1);
 }
-
-.dark-mode a{
+body.dark-mode a {
   color: teal;
-}
+}/*# sourceMappingURL=globals.css.map */

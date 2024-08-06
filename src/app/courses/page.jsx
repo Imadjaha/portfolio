@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import courses from "./courses";
-import "./courses.css";
+import './assets/sass/main.css';
 import scrollTopButton from "./assets/up-arrow.png";
 
 export default function Courses() {

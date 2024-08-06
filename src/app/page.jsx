@@ -25,6 +25,7 @@ export default function Home() {
             <Qualifications />
             <br />
           </div>
+          
           <hr />
         </div>
         <Projects />

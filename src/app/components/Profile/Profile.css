@@ -1,32 +1,36 @@
 .text-container {
-    max-height: 0;
-    overflow: hidden;
-    /* transition: max-height 2.5s ease-out; */
-    opacity: 0;
-    transition: max-height 2.5s ease-out, opacity 2.5s ease-out;
-    text-align: justify;
-      
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 2.5s ease-out, opacity 2.5s ease-out;
+  text-align: justify;
+  
   line-height: 1.5;
-  word-wrap: break-word; 
+  word-wrap: break-word;
+  margin-right: 19px;
   hyphens: auto;
-
-
-  }
-
-
-  .text-container.show {
-    max-height: 500px; /* Adjust to the maximum height you want */
-
-    opacity: 1;
-    transition: max-height 4.5s ease-in, opacity 1.5s ease-in;
-    text-align: justify;
-    text-transform: capitalize;
- 
-  }
-
-.profile{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+  text-transform: capitalize;
 }
 
+.text-container.show {
+  max-height: 500px; /* Adjust to the maximum height you want */
+  overflow: hidden;
+  opacity: 1;
+  transition: max-height 4.5s ease-in, opacity 1.5s ease-in;
+  text-align: justify;
+  text-transform: capitalize;
+  margin-right: 19px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  clip-path: inset(25px round 50%); 
+ 
+}
