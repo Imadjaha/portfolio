@@ -1,12 +1,15 @@
-version: '3'
 
 services:
-  nextjs:
+  app:
     build:
       context: .
       dockerfile: Dockerfile
+    container_name: portfolio_app
     ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-    command: npx serve out -p 3000
+      - 3000:3000
+    networks:
+      - portfolio-network
+
+networks:
+  portfolio-network:
+    driver: bridge
