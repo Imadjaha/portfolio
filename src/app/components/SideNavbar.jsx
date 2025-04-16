@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState } from "react";
 import "./SideNavbar.css";
 
@@ -14,7 +13,7 @@ import { Home, Book, ContactMail } from "@mui/icons-material";
 
 export default function SideNavbar() {
   const [open, setOpen] = useState(false);
-  const pathUrl = usePathname();
+
 
   const menuItems = [
     { text: "Home", icon: <Home />, link: "/" },

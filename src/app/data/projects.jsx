@@ -12,6 +12,7 @@ import project11 from "../Assets/project11.png";
 import project12 from "../Assets/project12.png";
 import project13 from "../Assets/project13.png";
 import project14 from "../Assets/project14.png";
+import project15 from "../Assets/project15.png";
 
 const PROJECTS = [
   {
@@ -24,7 +25,6 @@ const PROJECTS = [
     category: [
       "Java",
       "Spring Boot",
-      "MariaDB",
       "ReactJs",
       "Redux",
       "CSS",
@@ -82,7 +82,7 @@ const PROJECTS = [
       " Web app for plotting math functions, offering intuitive interface & export options.",
     link: "https://imadjaha.github.io/Function_Diagram/",
     image: project6,
-    category: ["JavaScript", "HTML", "CSS"],
+    category: ["JavaScript", "CSS"],
   },
   {
     id: 7,
@@ -125,7 +125,7 @@ const PROJECTS = [
       "Play 'Guess the Word Game' - a dynamic, color coded challenge to test your word prowess!",
     link: "https://imadjaha.github.io/GuessTheWordGame/",
     image: project1,
-    category: ["JavaScript", "HTML", "CSS"],
+    category: ["JavaScript", "CSS"],
   },
   {
     id: 12,
@@ -134,7 +134,7 @@ const PROJECTS = [
       "Create a To-Do List with HTML, CSS & JS, utilizing local storage for persistent data.",
     link: "https://imadjaha.github.io/To-Do-List/",
     image: project2,
-    category: ["JavaScript", "HTML", "CSS"],
+    category: ["JavaScript", "CSS"],
   },
   {
     id: 13,
@@ -143,7 +143,7 @@ const PROJECTS = [
       "Mini Calculator: Modern tool for daily math needs, with sleek design & intuitive UI.",
     link: "https://imadjaha.github.io/calculator/",
     image: project3,
-    category: ["JavaScript", "HTML", "CSS"],
+    category: ["JavaScript", "CSS"],
   },
   {
     id: 14,
@@ -153,6 +153,15 @@ const PROJECTS = [
     link: "https://imadjaha.github.io/tic-tac-toe-ReactJs_NextJs/",
     image: project4,
     category: ["ReactJs", "NextJs", "Typescript", "CSS"],
+  },
+  {
+    id: 15,
+    title: "Portfolio",
+    description:
+      "My Portfolio created with NextJs and CSS, dockerized and deployed on GitHub.",
+    link: "https://imadjaha.github.io/portfolio/",
+    image: project15,
+    category: ["NextJs", "CSS"],
   },
 ];
 

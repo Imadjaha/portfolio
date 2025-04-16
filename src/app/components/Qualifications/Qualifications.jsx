@@ -23,7 +23,7 @@ function Qualifications() {
           <i>September 2024 - Present</i>
           <br />
           Involved in designing and implementing <b>Dash</b> and <b>Plotly</b> components in
-          <b>Python</b>, integrating <b>JavaScript</b> for dynamic client-side interactions,
+          <b> Python</b>, integrating <b>JavaScript</b> for dynamic client-side interactions,
           and utilizing <b>GraphQL</b> for efficient data management. Additionally,
           contributing to <b>machine learning</b> tasks and occasionally working with
           <b> AWS Cloud</b> services to enhance application performance and scalability.
