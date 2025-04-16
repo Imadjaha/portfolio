@@ -1,30 +1,18 @@
-"use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import "./SideNavbar.css";
 
 import {
-  Drawer,
   List,
   ListItem,
   ListItemIcon,
   ListItemText,
-  IconButton,
-  Toolbar,
-  AppBar,
-  Typography,
-  Box,
 } from "@mui/material";
-import { Menu as MenuIcon, Home, Book, ContactMail } from "@mui/icons-material";
+import { Home, Book, ContactMail } from "@mui/icons-material";
 
 export default function SideNavbar() {
   const [open, setOpen] = useState(false);
-
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
   const pathUrl = usePathname();
 
   const menuItems = [
@@ -34,22 +22,23 @@ export default function SideNavbar() {
   ];
 
   return (
-    <div className={`aside ${open ? "open" : ""}`} onMouseLeave={handleClose}>
-      <div className="nav-toggler" onMouseEnter={handleOpen}>
+    <div className={`aside ${open ? "open" : ""}`} onMouseLeave={() => setOpen(false)}>
+      <div className="nav-toggler" onMouseEnter={() => setOpen(true)}>
         <span />
         <span />
         <span />
       </div>
       <div className="aside-inner">
         <div className="logo">
-          <Link href="/" onClick={handleClose}>
+          <Link href="/" onClick={() => setOpen(false)}>
             Aimad Bouchouaf
           </Link>
         </div>
+
         <List>
           {menuItems.map((item) => (
-            <Link href={item.link} key={item.text} passHref>
-              <ListItem button onClick={() => setOpen(false)}>
+            <Link href={item.link} key={item.text} passHref legacyBehavior>
+              <ListItem button component="a" onClick={() => setOpen(false)}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItem>
