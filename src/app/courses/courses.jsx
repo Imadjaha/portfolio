@@ -121,7 +121,63 @@ const courses = [
     description:
       "Qualifications: Mastery of fundamental approaches to professional software development using various methodologies and graphical notations such as UML, ERM, and SA/SD. Proficiency in reading Java code and translating it into UML diagrams. Experience with JUnit5 for unit testing and the ability to assess the applicability of CASE tools based on practical experience. Topics Covered: Introduction to Software Technology: Overview of object-oriented software development; detailed object-oriented analysis using UML, including Class Diagrams, Sequence Diagrams, Use Case Diagrams, and State Machine Diagrams; object-oriented design (OO-Design); data-oriented modeling methods including ERM; structured analysis (SA/SD); development methodologies; quality assurance (QA) with JUnit5 for unit testing; CASE tools/UML tools; version management systems. Practical Application: Hands-on exercises with real-world examples, including translating Java code to UML diagrams, implementing unit tests with JUnit5, and practical use of development tools and methodologies.",
   },
-
+  {
+    id: 18,
+    title: "Financial Accounting and Cost Accounting",
+    semester: "WS25",
+    description:
+      "Qualifications: Solid understanding of the fundamental concepts and issues in internal and external accounting. Ability to distinguish between the different subsystems of accounting, especially cost and revenue accounting and financial accounting, based on their purposes, tasks, and accounting measures. Students can record, allocate, and summarize costs and revenues according to various criteria for targeted calculations. Furthermore, they are able to identify decision-relevant costs and revenues for different fundamental business problems. Students master the technique of double-entry bookkeeping and have basic knowledge regarding the preparation of annual financial statements according to commercial and tax law. They can independently record and document accounting-relevant transactions and assess how business activities affect the representation of the financial position in accounting. Topics Covered: Basics of accounting (objectives, subsystems, key figures); costing methods (cost unit accounting); cost allocation (cost center accounting); cost capture (cost type accounting); planned costing and break-even analysis; contribution margin accounting. Financial accounting topics include legal foundations, the technique of double-entry bookkeeping, basics of commercial and tax balance sheets, and the booking and accounting of selected business transactions.",
+  },
+  {
+    id: 19,
+    title: "Introduction to IT Security",
+    semester: "WS25",
+    description:
+      "Covers foundational methods and concepts of IT security relevant for further technical specialization. Includes analysis techniques for assessing the security of complex systems. Practical sessions enhance both technical and collaborative competencies. Topics include hardware, software, and system-level security; security in Service-Oriented Architectures (SOA); malware detection and analysis; authentication and integrity mechanisms; as well as risk and threat assessment methodologies.",
+  },
+  {
+    id: 20,
+    title: "Software Technology Lab",
+    semester: "WS25",
+    description:
+      "Expands on concepts from the Software Technology module through practical implementation in a team-based software project. Focus lies on the application of object-oriented methodologies, system design, and modern development workflows within a real-world context. Emphasizes collaboration, planning, and agile project execution using current industry technologies. Example project: a full-stack Media Management Tool developed with Spring Boot, MariaDB, Vite.js, and Redux. Core features include media cataloging, loan tracking, category management, statistics, and user authentication. The system supports efficient data handling, responsive UI design, secure storage, and optional mobile integration for extended functionality.",
+  },
+  {
+    id: 21,
+    title: "Key Competences in Computer Science",
+    semester: "WS25",
+    description:
+      "Provides an in-depth overview of current technologies and tools in computer science, with a focus on problem analysis from a computational perspective, researching programmatic solutions, and implementing them using industry-standard software tools. Key topics include Docker, GitLab CI/CD, Linux, Python virtual environments, networking, Docker Compose, and Git. This knowledge enables independent research and the development of solutions across various domains within computer science.",
+  },
+  {
+    id: 22,
+    title: "Design Patterns: Strategy",
+    semester: "WS25",
+    description:
+      "Design Patterns describe proven solution templates for recurring design problems in software development (and architecture). By using these reusable templates in software design, it is possible to avoid common mistakes and 'worst practices,' ensuring that software systems are developed to be scalable, maintainable, and extensible from the start. \n\nIn this seminar, we will not only discuss design patterns theoretically but also examine and experiment with them practically. Each participant will focus on a specific pattern, particularly the Strategy Design Pattern, and implement a software solution for a suitable application example—first naively without the pattern and then again using the pattern. Through these code examples, we will illustrate the advantages (and possibly disadvantages) of using the Strategy Pattern."
+  }
+  ,
+  {
+    id: 23,
+    title: "Marketing and Production Economics",
+    semester: "SS25",
+    description: "Upon completion of this module, participants will have a fundamental understanding of marketing and production economics. Marketing involves understanding the alignment of company activities with market demands and strategy implementation. Production involves understanding and analyzing production and logistics systems using various decision models and methods."
+  },
+  {
+    id: 24,
+    title: "Production and Logistics Management",
+    semester: "SS25",
+    description: "Upon successful completion of this module, students will have a basic understanding of production and logistics planning tasks and methods, and will be able to integrate them into the structure of enterprise planning systems (APS, ERP). They will be able to apply both quantitative and qualitative methods and models to support decision-making in conceptual and practical problem scenarios, and to transfer these methods to new challenges."
+  },
+  {
+    id: 25,
+    title: "Object-Oriented Programming in Java",
+    semester: "SS25",
+    description: "Qualifications: Understanding of core concepts in Java programming, including object orientation, inheritance, packages, interfaces, and generics. Proficiency in handling exceptions, building graphical user interfaces, working with threads, utilizing network classes, and connecting to databases. Topics Covered: Java Virtual Machine (JVM), object-oriented programming concepts, inheritance and polymorphism, packages and interfaces, exception handling, generics, building graphical user interfaces (GUI) with JavaFX or Swing, multithreading and concurrency, networking with Java's network classes, and database connectivity using JDBC."
+  }
+  
+  
+  
 ];
 
 export default courses;

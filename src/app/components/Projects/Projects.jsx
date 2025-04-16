@@ -2,29 +2,32 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import PROJECTS from "../../data/projects";
+import { Fragment } from "react";
 function Projects() {
   const [selectedCategories, setSelectedCategories] = useState([]);
 
-  const categories = Array.isArray(PROJECTS)  ? [...new Set(PROJECTS.flatMap((PROJECT) => PROJECT.category || []))] : [];
-
+  const categories = Array.isArray(PROJECTS)
+    ? [...new Set(PROJECTS.flatMap((PROJECT) => PROJECT.category || []))]
+    : [];
 
   const toggleCategory = (category) => {
-    setSelectedCategories((prevSelectedCategories) => 
+    setSelectedCategories((prevSelectedCategories) =>
       prevSelectedCategories.includes(category)
         ? prevSelectedCategories.filter((selected) => selected !== category)
         : [...prevSelectedCategories, category]
     );
   };
-const filteredProjects = Array.isArray(selectedCategories) && selectedCategories.length === 0
-    ? PROJECTS || [] // Ensure PROJECTS is an array or use an empty array
-    : PROJECTS?.filter((project) =>
-        selectedCategories.every((categoryOn) =>
-          project.category?.includes(categoryOn)
-        )
-      );
+  const filteredProjects =
+    Array.isArray(selectedCategories) && selectedCategories.length === 0
+      ? PROJECTS || [] // Ensure PROJECTS is an array or use an empty array
+      : PROJECTS?.filter((project) =>
+          selectedCategories.every((categoryOn) =>
+            project.category?.includes(categoryOn)
+          )
+        );
 
   return (
-    <div>
+    <Fragment>
       <h2>Projects</h2>
       <div>
         {categories.map((category) => (
@@ -46,7 +49,7 @@ const filteredProjects = Array.isArray(selectedCategories) && selectedCategories
           <Project key={PROJECT.id} project={PROJECT} />
         ))}
       </div>
-    </div>
+    </Fragment>
   );
 }
 
@@ -59,7 +62,15 @@ const Project = (props) => {
   }, []);
   return (
     <div className={`card ${isShowen ? "show" : ""}`}>
-      <Image src={image} alt="project image" layout="responsive" width={700} height={475} />
+      <div className="image-container">
+        <Image
+          src={image}
+          alt="project image"
+          width={400}
+          height={300}
+          style={{ objectFit: "cover" }}
+        />
+      </div>
       <h3 style={{ fontSize: 20, color: "grey" }}>{title}</h3>
       <p style={{ fontSize: 17, padding: 4 }}>{description}</p>
       <button onClick={() => window.open(link, "_blank")}>View Project</button>

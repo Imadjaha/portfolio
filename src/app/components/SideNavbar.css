@@ -86,7 +86,7 @@
 
   
   .nav li {
-    position: relative; /* Notwendig für das Pseudoelement ::after */
+    position: relative; 
     padding:  0;
     margin: 0;
   }
@@ -95,8 +95,8 @@
     content: "";
     display: block;
     width: 100%;
-    height: 1px; /* Höhe der Linie */
-    background-color: black; /* Farbe der Linie */
+    height: 1px; 
+    background-color: black;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -104,5 +104,5 @@
 
   
   .nav li:last-child::after {
-    content: none; /* Entfernt die Linie nach dem letzten <li> */
+    content: none; 
   }

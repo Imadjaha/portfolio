@@ -7,10 +7,12 @@ const DarkModeContext = createContext();
 
 const DarkModeProvider = ({ children }) => {
   const [darkMode, setDarkMode] = useState(false);
+  const [ hasMounted, setHasMounted ] = useState(false);
 
   useEffect(() => {
     const savedMode = localStorage.getItem("darkMode") === "true";
     setDarkMode(savedMode);
+    setHasMounted(true);
     if (savedMode) {
       document.body.classList.add("dark-mode");
     } else {
@@ -30,6 +32,10 @@ const DarkModeProvider = ({ children }) => {
       return newMode;
     });
   };
+  
+  if (!hasMounted) {
+    return null;
+  }
 
   return (
     <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Fragment } from "react";
 
 import styles from "./page.module.css";
 import Projects from "../app/components/Projects/Projects";
@@ -14,7 +15,7 @@ export default function Home() {
   return (
     <DarkModeProvider>
     
-      <main>
+      <main className="bg-white-dark">
         <LightDarkMode />{" "}
         <div className="row">
           <Title />

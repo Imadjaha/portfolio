@@ -1,55 +1,49 @@
-'use client'
+"use client";
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
-import "./SideNavbar.css"
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
+import "./SideNavbar.css";
+
+import { Drawer, List, ListItem, ListItemIcon, ListItemText, IconButton, Toolbar, AppBar, Typography, Box } from '@mui/material';
+import { Menu as MenuIcon, Home, Book, ContactMail } from '@mui/icons-material';
+
 export default function SideNavbar() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
-  const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
-  const pathUrl = usePathname()
+  const pathUrl = usePathname();
 
   return (
-    <aside className={`aside ${open ? 'open' : ''}`}      onMouseLeave={handleClose}>
-      <div 
-        className='nav-toggler' 
-        onMouseEnter={handleOpen} 
-   
-      >
+    <div className={`aside ${open ? "open" : ""}`} onMouseLeave={handleClose}>
+      <div className="nav-toggler" onMouseEnter={handleOpen}>
         <span />
         <span />
         <span />
       </div>
-      <div className='aside-inner'>
+      <div className="aside-inner">
         <div className="logo">
-          <Link href="/" onClick={handleClose}>Aimad Bouchouaf</Link>
+          <Link href="/" onClick={handleClose}>
+            Aimad Bouchouaf
+          </Link>
         </div>
-        <ul className="nav">
-          <li onClick={handleClose}>
-            <Link href="/">
-              <i className="fas fa-home"></i>
-              Home
-            </Link>
-          </li>
-          
-          <li onClick={handleClose}>
-            <Link href="/courses">
-              <i className="fas fa-courses"></i>
-              Courses
-            </Link>
-          </li>
+        <List>
+        {[
+          { text: 'Home', icon: <Home />, link: '/' },
+          { text: 'Courses', icon: <Book />, link: '/courses' },
+          { text: 'Contact', icon: <ContactMail />, link: '/contact' },
+        ].map((item) => (
+          <ListItem button key={item.text} component="a" href={item.link}>
+            <ListItemIcon>{item.icon}</ListItemIcon>
+            <ListItemText primary={item.text} />
+          </ListItem>
+        ))}
+      </List>
+
         
-          <li onClick={handleClose}>
-            <Link href="/contact">
-              <i className="fas fa-contact"></i>
-              Contact
-            </Link>
-          </li>
-        </ul>
       </div>
-    </aside>
-  )
+    </div>
+  );
 }

@@ -8,9 +8,8 @@ export default function Footer() {
       }, []);
   return (
   <Fragment>
-    <div className="pt-lg-10 pt-5 footer bg-white">
-      {/* ... other code ... */}
-  
+    <div className="footer">
+ 
       <p>Designed and developed by Aimad Bouchouaf</p>
       <p>{`© ${year}. All Rights Reserved.`}</p>
     </div>

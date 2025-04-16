@@ -1,6 +1,7 @@
 import {Harmattan } from "next/font/google";
 import "./globals.css";
 import SideNavbar from "./components/SideNavbar";
+import { DarkModeProvider } from "../app/components/DarkMode/DarkModeContext";
 
 
 const harmattan = Harmattan({
@@ -16,9 +17,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={harmattan.className}>
-      <SideNavbar />
-     {children}</body>
-    </html>
+    <body className={harmattan.className}>
+      <DarkModeProvider>
+        <SideNavbar />
+        {children}
+      </DarkModeProvider>
+    </body>
+  </html>
   );
 }

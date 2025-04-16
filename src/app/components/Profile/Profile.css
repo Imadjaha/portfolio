@@ -31,6 +31,7 @@
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
+  margin: 0 auto;
   clip-path: inset(25px round 50%); 
  
 }
