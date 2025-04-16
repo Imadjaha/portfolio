@@ -1,10 +1,10 @@
-next.config.mjs
-const isProd = process.env.NODE_ENV === 'production';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: isProd ? '/portfolio/' : '',
-  basePath: isProd ? '/portfolio' : '',
-  trailingSlash: true,
-};
-
-export default nextConfig;
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio/' : '',
+    basePath: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+    trailingSlash: true,
+    output: 'export', // required for static export (GitHub Pages)
+  };
+  
+  export default nextConfig;
+  
